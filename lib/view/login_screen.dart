@@ -22,6 +22,19 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
+              const LoginField(
+                hintText: 'Email',
+              ),
+              const SizedBox(height: 15),
+              const LoginField(
+                hintText: 'Password',
+              ),
+              const SizedBox(height: 15),
+              const Text(
+                "or",
+                style: TextStyle(fontSize: 17),
+              ),
+              const SizedBox(height: 15),
               SocialButton(
                 iconPath: 'assets/svgs/g_logo.svg',
                 label: "Continue with Google",
@@ -33,19 +46,6 @@ class LoginScreen extends StatelessWidget {
                 label: "Continue with Facebook",
                 horizontalPadding: 90,
                 onPressed: () {},
-              ),
-              const SizedBox(height: 15),
-              const Text(
-                "or",
-                style: TextStyle(fontSize: 17),
-              ),
-              const SizedBox(height: 15),
-              const LoginField(
-                hintText: 'Email',
-              ),
-              const SizedBox(height: 15),
-              const LoginField(
-                hintText: 'Password',
               ),
               const SizedBox(height: 20),
               GradientButton(
